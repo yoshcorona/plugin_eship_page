@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShip - WooCommerce Plugin</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png"/>
+    <link rel="stylesheet" href="css/mi.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/9249071b2d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <header class="header__component">
+        <nav>
+            <div>
+                <a target="_blank" href="https://myeship.co/"><img src="img/eship-logo.png" alt=""></a>
+            </div>
+            <div class="main__menu">
+                <a target="_blank" href="https://myeship.co/es#inicio">Inicio</a>
+                <a target="_blank" href="https://myeship.co/es#beneficios">Beneficio</a>
+                <a target="_blank" href="https://myeship.co/es#caracteristicas">Caracteristicas</a>
+                <a target="_blank" href="https://myeship.co/servicios-cumplimiento">Servicio de Fulfillment</a>
+                <a target="_blank" href="https://myeship.co/es#conoce-nuestra-api">Conoce nuestra API</a>
+                <a target="_blank" href="https://myeship.co/es#planes">Planes</a>
+                <a target="_blank" href="https://myeship.co/es#aliados">Aliados</a>
+                <a target="_blank" href="https://myeship.co/es#contacto">Contacto</a>
+            </div>
+            <div class="menu__icon">
+                <i id="show" style="cursor: pointer;"  class=" fa-solid fa-bars"></i>
+
+            </div>
+
+            <div id="responsive__menu">
+                <div id="menu__toggle">
+                    
+                    <div id="hide" style="cursor: pointer;" class="fa-solid fa-xmark"></div>
+                    <a target="_blank" href="https://myeship.co/es#inicio">Inicio</a>
+                    <a target="_blank" href="https://myeship.co/es#beneficios">Beneficio</a>
+                    <a target="_blank" href="https://myeship.co/es#caracteristicas">Caracteristicas</a>
+                    <a target="_blank" href="https://myeship.co/servicios-cumplimiento">Servicio de Fulfillment</a>
+                    <a target="_blank" href="https://myeship.co/es#conoce-nuestra-api">Conoce nuestra API</a>
+                    <a target="_blank" href="https://myeship.co/es#planes">Planes</a>
+                    <a target="_blank" href="https://myeship.co/es#aliados">Aliados</a>
+                    <a target="_blank" href="https://myeship.co/es#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="change__header">
+
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__text">
+                    <h2>Descarga gratis nuestro plugin</h2>
+                    <p class="text__info">Con nuestro plugin instalado en tu tienda podrás cotizar servicios, generar guías 
+                        y rastrear tus envíos, todo desde el panel de administrador de tu tienda. 
+                    </p>
+                    <p class="save__text"><i class="fa-solid fa-clock"></i>Ahorra tiempo y haz más eficiente tu proceso de envío.</p>
+                    <a class="button__banner" href="#"><i class="fa-solid fa-download"></i>Integrar Plugin</a>
+                </div>
+                <div class="banner__cover">
+                    <img src="img/phone-image.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="pluginLogos">
+            <div class="logos__eship-woo">
+                <img class="logo__eship" src="img/eship-brand.png" alt="">
+                <img class="plus__icon" src="img/plus-icon.png" alt="">
+                <img class="logo__woo" src="img/woocomerce-brand.png" alt="">
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2><span>Beneficios</span> de conectar <br> tu tienda con <span>eShip</span></h2>
+
+            <div class="advantages__plugin">
+                <div class="advantage__card_truck">
+                    <div class="icon__truck">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h2>Cotizar Servicios</h2>
+                    <p>Puedes elegir tu carrier favorito entre 
+                        una gran variedad de servicios 
+                        disponibles en nuestra plataforma.
+                    </p>
+                </div>
+
+                <div class="advantage__card_route">
+                    <div class="icon__tracking yellow">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <h2>Rastrear Envíos</h2>
+                    <p>Puedes rastrear todo los envíos de tus 
+                        paquetes de una forma simple desde 
+                        nuestra webapp.
+                    </p>
+                </div>
+
+                <div class="advantage__card_guide">
+                    <div class="icon__guide purple">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h2>Generar Guías</h2>
+                    <p>Con nuestra WebApp puedes hacer un 
+                        tracking de tus paquetes además de que 
+                        puede personalizar con tu tienda. 
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="why__useourplugin">
+            <h2>¿Porqué usar nuestro plugin?</h2>
+
+            <div class="plugin__container">
+                
+                <button class="tablinks" onclick="openSection(event, 'Courrier')" id="defaultOpen">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Selecciona <br> el servicio</p>
+                </button>
+
+                <button class="tablinks" onclick="openSection(event, 'Label')">
+                    <i class="fa-solid fa-file"></i>
+                    <p>Imprime tus <br>  etiquetas</p>
+                </button>
+
+                <button  class="tablinks" onclick="openSection(event, 'Labels')">
+                    <i class="fa-solid fa-copy"></i>
+                    <p>Multiples <br> etiquetas</p>
+                </button>
+
+                <button class="tablinks" onclick="openSection(event, 'Template')">
+                    <i class="fa-solid fa-box-open"></i>
+                    <p>Plantillas para <br> tus paquetes</p>
+                </button>
+
+            </div>
+
+            <div class="brand__container">
+
+                <div  id="Courrier" class="tabcontent">
+                    <h2>Elige el carrier de preferencia</h2>
+                    <p>
+                        Obtén tarifas especiales en envíos nacionales e internacionales <br> con FedEx DHL Express, USPS, 
+                        NZ Post, UPS, Segmail(México) y más. 
+                    </p>
+                    <div class="logos__grid">
+                        <div class="seg">
+                            <img src="img/Segmail_color.png" alt="">
+                        </div>
+                        <div class="dhl">
+                            <img src="img/DHL_color.png" alt="">
+                        </div>
+                        <div class="est">
+                            <img src="img/Estafeta_color.png" alt="">
+                        </div>
+                        <div class="mens">
+                            <img src="img/MensajerosUrbanos_color.png" alt="">
+                        </div>
+                        <div class="moov">
+                            <img src="img/Moova_color.png" alt="">
+                        </div>
+                        <div class="nzp">
+                            <img src="img/NZ_color.png" alt="">
+                        </div>
+                        <div class="ups">
+                            <img src="img/UPS_color.png" alt="">
+                        </div>
+                        <div class="99m">
+                            <img src="img/99minutos_color.png" alt="">
+                        </div>
+                        <div class="empty-l">
+                           
+                        </div>
+                        <div class="redpack">
+                            <img src="img/Redpack_color.png" alt="">
+                        </div>
+                        <div class="usps">
+                            <img src="img/USPS_color.png" alt="">
+                        </div>
+                        <div class="empty-r">
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Label"  class="tabcontent">
+                    <h2>Imprime tus etiquetas de envío</h2>
+                    <p>
+                        Con solo unos pocos clics puedes imprimir tus etiquetas de envío y <br> agendar todas 
+                        tus recolecciones. Puedes elegir entre
+                        formato térmico o carta.
+                    </p>
+                    <img class="print__image" src="img/Print.png" alt="">
+                </div>
+
+                <div id="Labels"  class="tabcontent">
+                    <h2>Imprime multiples etiquetas</h2>
+                    <p>
+                        Ahorre tiempo en el proceso de envío simplemente seleccionando el<br> 
+                        pedidos que desea enviar y
+                        generar etiquetas para sus productos.
+                    </p>
+                    <img class="print__image" src="img/Multiple Labels.png" alt="">
+                </div>
+                
+               
+                <div id="Template" class="tabcontent">
+                    <h2>Crea plantillas para tus paquetes</h2>
+                <p>
+                    Puedes elegir entre usar las dimensiones  de tus productos <br> para envíos o agregue su propio peso predeterminadoy dimensiones.
+                </p>
+                    <img class="print__image" src="img/Template.png" alt="">
+                </div>
+
+            </div>
+    
+        </section>    
+
+        <section class="testimonials">
+            <h2>Que están diciendo las tiendas en línea</h2>
+            
+            <div class="carrousel__container">
+
+                <div class="buttons">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+
+                <div class="comments">
+
+                    <div class="card__carrousel_container" id="slide">
+
+                        <div class="carrousel__testimonials">
+                            <div class="image__store">
+                                <img src="img/testimonial-one.png" alt="">
+                            </div>
+                            <div class="comment__store">
+                                <h2>Nune Studio</h2>
+                                <p>Excelente aplicación, el uso de la plataforma es muy 
+                                    sencilla, las guías se generan automáticamente con
+                                     la información del cliente sin tener que yo hacer nada.
+                                    Me ayuda a darle seguimiento a los envíos y asi...
+                                </p>
+                                <div class="rating__coment">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>   
+                        </div>
+                    
+
+                        <div class="carrousel__testimonials">
+                        <div class="image__store">
+                            <img src="img/testimonial-two.png" alt="">
+                        </div>
+                        <div class="comment__store">
+                            <h2>Mojimi Beauty</h2>
+                            <p>Esta app funciona muy bien, es muy practica y nos hace los envíos mucho más sencillos. Llevamos usándola más de dos años y nunca hemos tenido problemas. El servicio al cliente además es excelente y muy rápido.
+                            </p>
+                            <div class="rating__coment">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>   
+                        </div>
+                
+
+                        <div class="carrousel__testimonials">
+                    <div class="image__store">
+                        <img src="img/testimonial-three.png" alt="">
+                    </div>
+                    <div class="comment__store">
+                        <h2>BookSnap</h2>
+                        <p>Me encanta esta aplicación! ¡Realmente hace que todo mi proceso de envío sea mucho más fácil! ¡Envía automáticamente notificaciones de envíos a mis clientes y puedo rastrear fácilmente todos mis envíos.
+                        </p>
+                        <div class="rating__coment">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>   
+                        </div>
+           
+
+                        <div class="carrousel__testimonials">
+                <div class="image__store">
+                    <img src="img/testimonial-four.png" alt="">
+                </div>
+                <div class="comment__store">
+                    <h2>Creative Boys</h2>
+                    <p>Excelente aplicación la verdad, todo ha salido perfecto. Nos hace la vida muy fácil, llevamos años usándola. El servicio a clientes super personalizado, estamos muy contentos con este aplicación.
+                    </p>
+                    <div class="rating__coment">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         </section>
+    
+    </main>
+
+    <footer>
+
+        <div class="footer__container">
+
+                <section class="sec__a">
+
+                    <a href="#"><img src="img/eship-logo.png" alt=""></a> 
+
+                    <div class="menu__foter">
+                        <a target="_blank" href="https://myeship.co/es#inicio">Inicio</a>
+                        <a target="_blank" href="https://myeship.co/es#beneficios">Beneficio</a>
+                        <a target="_blank" href="https://myeship.co/es#caracteristicas">Caracteristicas</a>
+                        <a target="_blank" href="https://myeship.co/servicios-cumplimiento">Servicio de Fulfillment</a>
+                        <a target="_blank" href="https://myeship.co/es#conoce-nuestra-api">Conoce nuestra API</a>
+                        <a target="_blank" href="https://myeship.co/es#planes">Planes</a>
+                        <a target="_blank" href="https://myeship.co/es#aliados">Aliados</a>
+                        <a target="_blank" href="https://myeship.co/es#contacto">Contacto</a>
+                        <a target="_blank" href="https://myeship.co/docs/en/">API</a>
+                        <a target="_blank" href="https://status.myeship.co/en/">API Status</a>
+                        <a target="_blank" href="https://help.myeship.co/en/">FAQ</a>
+                    </div>
+
+                    <p class="reserved__rights">
+                        Todos los derechos reservados. eship 
+                        | Pivacy notice
+                    </p>
+
+                    <p class="location__company">
+                        Paseo de los Tamarindos No. 90 S1, Col. Bosques de las Lomas, C.P. 05120, CDMX
+                    </p> 
+
+                </section>
+
+                <section class="sec__b">
+
+                    <p class="follow__fb">Siguenos en <a href=" https://www.facebook.com/eshipapp"><i class="fa-brands fa-facebook-f"></i></a></p>
+                    <p class="number__phone">6197848683</p>
+                    <p class="eship__contact">contact@myeship.co</p>
+
+                </section>
+        </div>
+        
+    </footer>
+
+    <script src="js/apps.js"></script>
+
+</body>
+</html>
